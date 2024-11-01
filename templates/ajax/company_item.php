@@ -1,0 +1,2 @@
+<div class="business-name"><?php echo esc_html($business['business_name']); ?></div>
+<div class="business-address"><span id="sprinque_address_line1"><?php echo esc_html("{$business['address']['address_line1']}") ?>,</span> <span id="sprinque_zip_code"><?php echo esc_html($business['address']['zip_code']); ?></span> <span id="sprinque_city"><?php echo esc_html($business['address']['city']); ?>,</span> <span id="sprinque_country"><?php echo esc_html($business['address']['country']['name']); ?></span></div>

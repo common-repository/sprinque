@@ -1,0 +1,439 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sprinque\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-01 07:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.1\n"
+"X-Domain: sprinque"
+
+#: templates/frontend/srinque_pay_modal_form.php:102
+msgid "(in :sec seconds)"
+msgstr ""
+
+#: sprinque.php:554 templates/ajax/founded_companies.php:30
+msgid "Add buyer manually"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:54
+msgid "Address"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:58
+msgid "Apartment, suite, etc (optional)"
+msgstr ""
+
+#: sprinque.php:499 sprinque.php:525
+msgid "Awaiting Review"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:52
+msgid "Business address"
+msgstr ""
+
+#: sprinque.php:550 include/payment_method.php:125
+#: include/payment_method.php:133
+msgid "Buy now and pay later for businesses"
+msgstr ""
+
+#: sprinque.php:553 templates/ajax/founded_companies.php:25
+msgid "Can't find the business you are looking for?"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:123
+#: templates/frontend/srinque_pay_modal_form.php:138
+#: templates/frontend/srinque_pay_modal_form.php:146
+msgid "Choose another payment method"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:62
+msgid "City"
+msgstr ""
+
+#: sprinque.php:551 sprinque.php:552 templates/ajax/founded_companies.php:3
+#: templates/ajax/founded_companies.php:8
+msgid "Click here"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:26
+#: templates/frontend/srinque_pay_modal_form.php:29
+#: templates/frontend/srinque_pay_modal_form.php:39
+msgid "Company Name"
+msgstr ""
+
+#: sprinque.php:551 sprinque.php:552 templates/ajax/founded_companies.php:3
+#: templates/ajax/founded_companies.php:8
+msgid "Company not found"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:34
+msgid "Company VAT ID"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:48
+#: templates/frontend/srinque_pay_modal_form.php:79
+#: templates/frontend/srinque_pay_modal_form.php:98
+msgid "Confirm"
+msgstr ""
+
+#: templates/frontend/cancel_order_sprinque.php:11
+#: templates/frontend/srinque_pay_modal_form.php:161
+msgid "Confirm cancelation"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:137
+#: templates/frontend/srinque_pay_modal_form.php:144
+msgid "Continue and wait"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:16
+msgid "Country"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:130
+msgid "days by Sprinque!"
+msgstr ""
+
+#: include/payment_method.php:608
+msgid "Enable Pay by Invoice"
+msgstr ""
+
+#: include/payment_method.php:606
+msgid "Enable/Disable"
+msgstr ""
+
+#: include/payment_method.php:622
+msgid ""
+"Find it in your Profile at the Srinque. Overview > My Account > API Keys and "
+"URLs"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:105
+#: templates/frontend/srinque_pay_modal_form.php:122
+msgid "Go Back"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://sprinque.com/"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:102
+msgid "If you have not received the code, please check your spam folder or"
+msgstr ""
+
+#: sprinque.php:556
+msgid "Loading..."
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:73
+msgid "Not all fields filled on Billing or Modal"
+msgstr ""
+
+#: sprinque.php:555
+msgid "Not all required fields are filled"
+msgstr ""
+
+#: include/payment_method.php:134
+msgid "Order finished with Pay by Invoice"
+msgstr ""
+
+#: sprinque.php:549 include/payment_method.php:124
+msgid "Pay by Invoice"
+msgstr ""
+
+#: include/payment_method.php:657 include/payment_method.php:664
+msgid "Pay by Invoice - Business only"
+msgstr ""
+
+#: sprinque.php:290
+msgid "Pay by Invoice - Cancelled"
+msgstr ""
+
+#: sprinque.php:557 templates/frontend/srinque_pay_modal_form.php:131
+#: templates/frontend/srinque_pay_modal_form.php:152
+msgid "Place order"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:156
+msgid "Placing your order"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:9
+msgid "Please select your business"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:66
+msgid "Postal code"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:78
+msgid "Previous step"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:129
+#: templates/frontend/srinque_pay_modal_form.php:150
+msgid "Purchase approved"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:135
+#: templates/frontend/srinque_pay_modal_form.php:142
+msgid "Purchase under review"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:44
+#: templates/frontend/srinque_pay_modal_form.php:45
+msgid "Registration number"
+msgstr ""
+
+#: include/payment_method.php:306
+msgid "Registration number is already used"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:102
+msgid "Resend Code"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:17
+msgid "Select a country"
+msgstr ""
+
+#: sprinque.php:526
+msgid "Shipping"
+msgstr ""
+
+#. Name of the plugin
+#. Author of the plugin
+#: sprinque.php:891
+msgid "Sprinque"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Sprinque for WordPress is a plugin that allows you to offer your business "
+"buyers net payment terms (15, 30, 60, 90 days) and thereby grow conversion "
+"and retention."
+msgstr ""
+
+#: include/payment_method.php:637
+msgid ""
+"Sprinque uses fullstory.com to debug buyer's behavior and improve the "
+"product. The user's data is not recorded"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:136
+#: templates/frontend/srinque_pay_modal_form.php:143
+msgid ""
+"This may take upto 24 hours for approval. Your Order is not confirmed until "
+"a decision is made. <br>We will notify you by email once the review is "
+"complete."
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:12
+msgid ""
+"To approve a payment term for you we need your company information to run a "
+"credit assessment"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:87
+msgid "To make sure it's really you we have sent a code to"
+msgstr ""
+
+#: sprinque.php:551 sprinque.php:552 templates/ajax/founded_companies.php:3
+#: templates/ajax/founded_companies.php:8
+msgid "to use it anyway"
+msgstr ""
+
+#: include/payment_method.php:634
+msgid "User tracking"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:36
+msgid "VAT ID"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:85
+msgid "Verify your email"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:110
+msgid "We are verifying your account"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:100
+msgid "Wrong code number"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:151
+msgid ""
+"You have been approved for a credit limit of €xx and a payment term of 30 "
+"days by Sprinque!"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:130
+msgid "You have been approved for a payment term of"
+msgstr ""
+
+#: include/payment_method.php:420 include/payment_method.php:450
+#, php-format
+msgid "You have been approved for a payment term of %s days by Sprinque!"
+msgstr ""
+
+msgid "Billing or Accounts Payable email"
+msgstr ""
+
+msgid "Total amount"
+msgstr ""
+
+msgid "You've been approved to pay with net terms. Select the payment term that best suits your company"
+msgstr ""
+
+#: sprinque.php:546
+msgid "days"
+msgstr ""
+
+#: sprinque.php:662
+msgid "Net %s days"
+msgstr ""
+
+msgid "Congratulations!"
+msgstr ""
+
+msgid "Confirm order"
+msgstr ""
+
+#: sprinque.php:663
+msgid "Free"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:144
+msgid "Your account has been created and you’ve been approved for a payment term of"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:167
+msgid "Required: business email for payment terms verification"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:168
+msgid "We've detected that you've provided a \"t-online.de\" email. Unfortunately, Sprinque's verification emails are blocked by t-online, preventing us from verifying your Business. We kindly suggest switching to a business email and reinitiating the process."
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:169
+#: templates/frontend/srinque_pay_modal_form.php:176
+#: templates/frontend/srinque_pay_modal_form.php:238
+msgid "Powered by"
+msgstr ""
+
+#: include/payment_method.php:880
+#: sprinque.php:667
+msgid "Emails verification are blocked by t-online."
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:174
+msgid "We've detected that you've entered a personal email address. As these accounts usually require manual verification taking approximately <b>1 business day</b>, we recommend switching to a business email for a quicker process."
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:175
+msgid "Proceed with current email"
+msgstr ""
+
+#: include/payment_method.php:883
+#: sprinque.php:668
+#: templates/frontend/srinque_pay_modal_form.php:173
+msgid "Consider business email for quicker verification"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:180
+msgid "Don't miss out on your purchase"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:181
+msgid "You're almost there! Please don't close or refresh the page, you will be automatically redirected to your order confirmation page. It will only take a moment, thanks for your patience!"
+msgstr ""
+
+#: include/payment_method.php:522
+#: include/payment_method.php:554
+msgid "You have been approved for a payment term of %s days by Sprinque!"
+msgstr ""
+
+#: sprinque.php:732
+msgid "Net %s days"
+msgstr ""
+
+#: sprinque.php:736
+msgid "Pay in %s instalments"
+msgstr ""
+
+#: sprinque.php:771
+msgid "%s days"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:144
+msgid "Pay in 3 equal instalments, after 30, 60, and 90 days. Exact due dates will be determined upon receipt of your order."
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:129
+msgid "Congratulations!"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:131
+msgid "You've been approved to pay with net terms. Select the payment term that best suits your company"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:134
+msgid "You have been approved to pay with net terms or instalments. Choose the option that best suits your business"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:137
+msgid "Net terms"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:143
+msgid "Instalments"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:138
+msgid "Pay the total order amount anytime within the due date."
+msgstr ""
+
+#: sprinque.php:883
+msgid "Pay by invoice with Sprinque"
+msgstr ""
+
+#: sprinque.php:761
+msgid ". <a id=\"what-is-sprinque\">That is how it works.</a>"
+msgstr ""
+
+msgid "That is how it works."
+msgstr ""
+
+msgid "Prev"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+
+#: templates/ajax/founded_companies.php:3
+msgid "No results, add business manually"
+msgstr ""
+
+#: templates/ajax/founded_companies.php:5
+msgid "We couldn't locate your business in public records, but you can manually register your business."
+msgstr ""
+
+#: templates/ajax/founded_companies.php:13
+msgid "Select your business"
+msgstr ""
+
+#: templates/ajax/founded_companies.php:15
+msgid "If your business isn't listed in this dropdown, you can manually input your business details and proceed."
+msgstr ""

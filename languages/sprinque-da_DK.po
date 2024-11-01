@@ -1,0 +1,307 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sprinque\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-06 20:54+0000\n"
+"PO-Revision-Date: 2022-08-06 17:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: Danish\n"
+"Language: da_DK\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.1\n"
+"X-Domain: sprinque"
+
+#: templates/ajax/founded_companies.php:21
+msgid "Add buyer manually"
+msgstr "Tilføj køber manuelt"
+
+#: templates/frontend/srinque_pay_modal_form.php:38
+msgid "Address"
+msgstr "Adresse"
+
+#: templates/frontend/srinque_pay_modal_form.php:42
+msgid "Apartment, suite, etc (optional)"
+msgstr "Lejlighed, suite, osv. (valgfrit)"
+
+#: include/payment_method.php:510
+msgid "API Key"
+msgstr "API-Nøgle"
+
+#: sprinque.php:385 sprinque.php:411
+msgid "Awaiting Review"
+msgstr "Afventer Gennemgang"
+
+#: templates/frontend/srinque_pay_modal_form.php:36
+msgid "Business address"
+msgstr "Business-adresse"
+
+#: include/payment_method.php:99 include/payment_method.php:491
+msgid "Buy now and pay later for businesses"
+msgstr "Køb nu og betal senere for virksomheder"
+
+#: templates/ajax/founded_companies.php:16
+msgid "Can't find the business you are looking for?"
+msgstr "Kan ikke finde den virksomhed, du er på udkig efter?"
+
+#: templates/frontend/cancel_order_sprinque.php:1
+msgid "Cancel Order"
+msgstr "Annullere Ordren"
+
+#: templates/frontend/srinque_pay_modal_form.php:142
+#: templates/frontend/cancel_order_sprinque.php:14
+msgid "Cancel order"
+msgstr "Annullere ordren"
+
+#: templates/frontend/srinque_pay_modal_form.php:93
+#: templates/frontend/srinque_pay_modal_form.php:108
+#: templates/frontend/srinque_pay_modal_form.php:116
+msgid "Choose another payment method"
+msgstr "Vælge en anden betalingsmetode"
+
+#: templates/frontend/srinque_pay_modal_form.php:46
+msgid "City"
+msgstr "Byen"
+
+#: templates/ajax/founded_companies.php:3
+msgid "Click here"
+msgstr "Klik her"
+
+#: templates/frontend/srinque_pay_modal_form.php:21
+#: templates/frontend/srinque_pay_modal_form.php:22
+msgid "Company Name"
+msgstr "Firma Navn"
+
+#: templates/ajax/founded_companies.php:3
+msgid "Company not found"
+msgstr "Virksomheden blev ikke fundet"
+
+#: templates/frontend/srinque_pay_modal_form.php:31
+#: templates/frontend/srinque_pay_modal_form.php:56
+#: templates/frontend/srinque_pay_modal_form.php:75
+msgid "Confirm"
+msgstr "Bekræfte"
+
+#: templates/frontend/srinque_pay_modal_form.php:131
+#: templates/frontend/cancel_order_sprinque.php:11
+msgid "Confirm cancelation"
+msgstr "Bekræft annullering"
+
+#: templates/frontend/srinque_pay_modal_form.php:107
+#: templates/frontend/srinque_pay_modal_form.php:114
+msgid "Continue and wait"
+msgstr "Fortsætte og vente"
+
+#: templates/frontend/srinque_pay_modal_form.php:11
+msgid "Country"
+msgstr "Land"
+
+#: templates/frontend/srinque_pay_modal_form.php:100
+msgid "days by Sprinque!"
+msgstr "dage med Sprinque!"
+
+#: include/payment_method.php:488
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: include/payment_method.php:477
+msgid "Enable Pay by Invoice"
+msgstr "Gøre det muligt at Betale med Faktura"
+
+#: include/payment_method.php:475
+msgid "Enable/Disable"
+msgstr "Aktiver/Deaktiver"
+
+#: include/payment_method.php:512
+msgid ""
+"Find it in your Profile at the Srinque. Overview > My Account > API Keys and "
+"URLs"
+msgstr ""
+"Find det i din profil på Srinque. Oversigt > Min konto > API-nøgler og URL'er"
+
+#: templates/frontend/srinque_pay_modal_form.php:82
+#: templates/frontend/srinque_pay_modal_form.php:92
+msgid "Go Back"
+msgstr "Gå Tilbage"
+
+#. URI of the plugin
+msgid "https://sprinque.com/"
+msgstr ""
+
+#: templates/frontend/srinque_pay_modal_form.php:135
+msgid "If this was not done by you, please cancel your order."
+msgstr "Hvis dette ikke var gjort af dig, kan du annullere din ordre."
+
+#: templates/frontend/srinque_pay_modal_form.php:79
+msgid "If you have not received the code, please check your spam folder or"
+msgstr "Hvis du ikke har modtaget koden, bedes du tjekke din spam-folder eller"
+
+#: include/payment_method.php:495
+msgid "Instructions"
+msgstr "Vejledning"
+
+#: include/payment_method.php:497
+msgid "Instructions that will be added to the thank you page and emails."
+msgstr "Vejledningen, der vil blive tilføjet til tak-siden og e-mails."
+
+#: templates/frontend/srinque_pay_modal_form.php:53
+msgid "Not all fields filled on Billing or Modal"
+msgstr "Ikke alle felter er udfyldt på Fakturering eller Modal"
+
+#: templates/frontend/srinque_pay_modal_form.php:32
+msgid "Not all required fields is filled"
+msgstr "Ikke alle nødvendige felter er udfyldt"
+
+#: templates/frontend/srinque_pay_modal_form.php:115
+msgid "Or you can proceed with another mode of payment."
+msgstr "Eller du kan fortsætte med en anden form for betaling."
+
+#: include/payment_method.php:98 include/payment_method.php:484
+msgid "Pay by Invoice"
+msgstr "Betale med Faktura"
+
+#: include/payment_method.php:546 include/payment_method.php:550
+msgid "Pay by Invoice - Business only"
+msgstr "Betale med Faktura - Business-kun"
+
+#: sprinque.php:205
+msgid "Pay by Invoice - Cancelled"
+msgstr "Betale med Faktura - Aflyst"
+
+#: include/payment_method.php:490
+msgid "Payment method description that the customer will see on your checkout."
+msgstr "Betalingsmetode beskrivelse, at kunden vil se på din checkout."
+
+#: templates/frontend/srinque_pay_modal_form.php:101
+#: templates/frontend/srinque_pay_modal_form.php:122
+msgid "Place order"
+msgstr "Bestil"
+
+#: templates/frontend/srinque_pay_modal_form.php:126
+msgid "Placing your order"
+msgstr "Placere din ordre"
+
+#: templates/frontend/srinque_pay_modal_form.php:9
+msgid "Please select your business"
+msgstr "Vælg venligst din virksomhed"
+
+#: templates/frontend/srinque_pay_modal_form.php:50
+msgid "Postal code"
+msgstr "Postnummer"
+
+#: templates/frontend/srinque_pay_modal_form.php:55
+msgid "Previous step"
+msgstr "Forrige trin"
+
+#: templates/frontend/srinque_pay_modal_form.php:99
+#: templates/frontend/srinque_pay_modal_form.php:120
+msgid "Purchase approved"
+msgstr "Køb godkendt"
+
+#: templates/frontend/srinque_pay_modal_form.php:105
+#: templates/frontend/srinque_pay_modal_form.php:112
+msgid "Purchase under review"
+msgstr "Køb under revision"
+
+#: templates/frontend/srinque_pay_modal_form.php:26
+#: templates/frontend/srinque_pay_modal_form.php:27
+msgid "Registration number"
+msgstr "Registreringsnummer"
+
+#: include/payment_method.php:268
+msgid "Registration number is already used"
+msgstr "Registreringsnummer er allerede brugt"
+
+#: templates/frontend/srinque_pay_modal_form.php:79
+msgid "Resend Code"
+msgstr "Send Kode"
+
+#: templates/frontend/srinque_pay_modal_form.php:12
+msgid "Select a country"
+msgstr "Vælg et land"
+
+#: sprinque.php:412
+msgid "Shipping"
+msgstr "Forsendelse"
+
+#. Name of the plugin
+#. Author of the plugin
+msgid "Sprinque"
+msgstr "Sprinque"
+
+#. Description of the plugin
+msgid ""
+"Sprinque for WordPress is a plugin that allows you to offer your business "
+"buyers net payment terms (15, 30, 60, 90 days) and thereby grow conversion "
+"and retention."
+msgstr ""
+"Sprinque til WordPress er et plugin, der giver dig mulighed for at tilbyde "
+"din virksomhed købere net betalingsbetingelser (15, 30, 60, 90 dage) og "
+"derved vokse konvertering og fastholdelse."
+
+#: include/payment_method.php:483
+msgid ""
+"This controls the title for the payment method the customer sees during "
+"checkout."
+msgstr "Denne kontrol titlen for den betalingsmetode, som kunden ser i kassen."
+
+#: templates/frontend/srinque_pay_modal_form.php:106
+#: templates/frontend/srinque_pay_modal_form.php:113
+msgid ""
+"This may take upto 24 hours for approval. Your Order is not confirmed until "
+"a decision is made. <br>We will notify you by email once the review is "
+"complete."
+msgstr ""
+"Dette kan tage op til 24 timer for godkendelse. Din ordre er ikke bekræftet, "
+"før en beslutning er truffet. <br>Vi giver dig besked via e-mail, når "
+"gennemgangen er afsluttet."
+
+#: include/payment_method.php:481
+msgid "Title"
+msgstr "Titel"
+
+#: templates/frontend/srinque_pay_modal_form.php:64
+msgid "To make sure it's really you we have sent a code to"
+msgstr ""
+"For at gøre sikker på, at det virkelig dig, vi har sendt en kode til at"
+
+#: templates/ajax/founded_companies.php:3
+msgid "to use it anyway"
+msgstr "at bruge det alligevel"
+
+#: templates/frontend/srinque_pay_modal_form.php:62
+msgid "Verify your email"
+msgstr "Bekræfte din e-mail"
+
+#: templates/frontend/srinque_pay_modal_form.php:139
+msgid "View order details"
+msgstr "Udsigt for detaljer"
+
+#: templates/frontend/srinque_pay_modal_form.php:87
+msgid "We are verifying your account"
+msgstr "Vi bekræfte din konto"
+
+#: templates/frontend/srinque_pay_modal_form.php:133
+msgid ""
+"We have noticed a purchase has been made from <strong>*Location*</strong>."
+msgstr ""
+"Vi har bemærket, at der er foretaget et køb fra <strong>*Location*</strong>."
+
+#: templates/frontend/srinque_pay_modal_form.php:77
+msgid "Wrong code number"
+msgstr "Forkert kode-nummer"
+
+#: templates/frontend/srinque_pay_modal_form.php:121
+msgid ""
+"You have been approved for a credit limit of €xx and a payment term of 30 "
+"days by Sprinque!"
+msgstr ""
+"Du er blevet godkendt til et kreditmaksimum på €xx og en betalingsfrist på "
+"30 dage ved Sprinque!"
+
+#: templates/frontend/srinque_pay_modal_form.php:100
+msgid "You have been approved for a payment term of"
+msgstr "Du er blevet godkendt til en betalingsfrist på"

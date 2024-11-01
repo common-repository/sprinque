@@ -1,0 +1,1251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@keyframes spinAround {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #e2e4f9;
+  border-radius: 3px;
+  padding: 15px;
+  color: #1f2355;
+  margin-top: 16px;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row.total {
+  font-weight: bold;
+  border: none;
+  padding-bottom: 0;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row.active {
+  border-color: #00023c;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row .label, #wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row .value {
+  font-size: 16px;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row .value {
+  margin-left: auto;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row input[type=radio] {
+  display: none !important;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row input[type=radio]:checked + .input-placeholder {
+  background-color: #00023c;
+  border-color: #00023c;
+  background-image: url("../img/checkmark.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#wpm-terms.wpm-modal-form-tab__terms .wpm-terms-row .input-placeholder {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid #D9DBF2;
+  margin-right: 9px;
+}
+
+html .wpm-overflow-hidden {
+  overflow: hidden !important;
+}
+
+.modal-form,
+.modal-form *,
+.modal-form:before,
+.modal-form.after {
+  box-sizing: border-box;
+}
+
+.modal-form-inner .powered-by {
+  margin-top: 20px;
+  color: #B6B8E2;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-form-inner .powered-by div {
+  font-size: 12px;
+  color: #B6B8E2;
+}
+.modal-form-inner .powered-by div .sprinque-powered-img {
+  height: 16px;
+  margin-bottom: -4px;
+  opacity: 0.3;
+}
+
+html[lang=de-DE] #wpm-modal-form.modal-middle .modal-form-inner {
+  max-width: 570px;
+}
+
+body #wpm-modal-form-wrapper #wpm-modal-form .modal-form__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form {
+  font-family: "Inter", sans-serif;
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form_show {
+  z-index: 100000;
+  opacity: 1;
+  pointer-events: visible;
+  visibility: visible;
+  font-family: "Inter", sans-serif;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form_show .modal-form__overlay {
+  opacity: 0 !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form_show div, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form_show span {
+  font-family: "Inter", sans-serif;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show.modal-form_anim .modal-form__overlay {
+  opacity: 1 !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show.modal-form_anim .modal-form-inner {
+  top: 20px;
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px, rgba(0, 0, 0, 0.14) 0px 24px 38px 3px, rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+  transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+@media screen and (max-width: 630px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form html[lang=de-DE] #wpm-modal-form.modal-middle .modal-form-inner .cant-complete-autorization .pagination-btns {
+    flex-direction: column;
+  }
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form html[lang=de-DE] #wpm-modal-form.modal-middle .modal-form-inner .cant-complete-autorization .pagination-btns .to_select_companies {
+    margin-bottom: 8px;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show {
+  -webkit-font-smoothing: antialiased;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show * {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab {
+  display: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab_active {
+  display: block;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__title {
+  /*text-align: left;*/
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  /*color: rgb(40, 43, 93);*/
+  color: #000339;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__title + * {
+  margin-top: 24px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__dsc {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgb(40, 43, 93);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__dsc a {
+  text-decoration: none !important;
+  color: #0000ff;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__note {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgb(40, 43, 93);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__resend--disabled {
+  color: rgb(217, 219, 242) !important;
+  cursor: not-allowed;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__resend--disabled .wpm-modal-form-tab__resend-notice {
+  display: inline;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-modal-form-tab__resend-notice {
+  display: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show #register-company-tab {
+  cursor: pointer;
+  color: #000339;
+  text-decoration: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item {
+  color: rgba(0, 0, 0, 0.6);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item-404 {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 6px 16px;
+  position: relative;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item.active, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item-404.active {
+  padding: 16px;
+  cursor: default !important;
+  background: rgb(255, 255, 255);
+  border: 1px solid #000339;
+  box-shadow: rgba(217, 219, 242, 0.5) 0px 4px 8px;
+  border-radius: 8px;
+  position: relative;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item:not(.active):not(.company-item-404):hover, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item-404:not(.active):not(.company-item-404):hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item__close, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies .company-item-404__close {
+  position: absolute;
+  cursor: pointer;
+  right: 16px;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/close-circle-grey.svg") center center no-repeat;
+  background-size: 20px 20px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .business-name {
+  color: rgb(40, 43, 93);
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .error-confirm-order {
+  padding-top: 16px;
+  font-size: 14px;
+  color: red;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .pagination-btns-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 5px 30px 0;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .pagination-btns-wrap .wpm-btn_mb {
+  width: auto;
+  margin: 0;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .pagination-btns {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .pagination-btns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-buttons-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+@media screen and (min-width: 576px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-buttons-row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-buttons-row_mt {
+  margin-top: 25px;
+}
+@media screen and (max-width: 575.98px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-buttons-row {
+    display: block;
+    margin-bottom: -10px;
+  }
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-buttons-row > * {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 576px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-button-col {
+    flex-basis: 0;
+    min-width: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap,
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap *,
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap:before,
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap.after {
+  box-sizing: border-box;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap {
+  position: relative;
+  z-index: 100;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open-dropdown .wpm-select-placeholder__clear, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open .wpm-select-placeholder__clear {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open-dropdown .wpm-select-placeholder__arrow svg path, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open .wpm-select-placeholder__arrow svg path {
+  fill: rgb(40, 43, 93);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open-dropdown {
+  z-index: 101;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open-dropdown .wpm-select-dropdown-container {
+  visibility: visible;
+  z-index: 10;
+  opacity: 1;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open {
+  z-index: 101;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open .wpm-select-placeholder__search {
+  opacity: 1;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open .wpm-select-placeholder__single,
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open .wpm-select-placeholder__rendered {
+  opacity: 0;
+  z-index: -1;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-wrap_open .wpm-select-dropdown-container {
+  visibility: visible;
+  z-index: 10;
+  opacity: 1;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-dropdown-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  margin-top: 8px;
+  background: #fff;
+  border: 1px solid rgb(217, 219, 242);
+  box-shadow: rgba(217, 219, 242, 0.5) 0px 4px 8px;
+  border-radius: 8px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-dropdown {
+  max-height: 150px !important;
+  overflow-y: auto;
+  padding: 8px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-dropdown__empty {
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-dropdown__option {
+  border-radius: 8px;
+  margin: 4px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(40, 43, 93);
+  cursor: default;
+  background: #fff;
+  padding: 8px 12px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-dropdown__option_highlighted {
+  background: #eaf3fa !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder {
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid rgb(217, 219, 242);
+  border-radius: 8px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__search {
+  opacity: 0;
+  border: 0 !important;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  position: relative;
+  font-size: 14px;
+  padding: 9px 12px;
+  font-weight: 400;
+  color: rgb(40, 43, 93);
+  border: 1px solid rgb(217, 219, 242);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  width: 100%;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__search::-webkit-input-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__search:-moz-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__search::-moz-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__search:-ms-input-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__search:focus {
+  outline: none !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__rendered, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__single {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 12px;
+  line-height: 38px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__rendered {
+  color: rgba(40, 43, 93, 0.4) !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__single {
+  color: rgb(40, 43, 93);
+}
+@media screen and (max-width: 768px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__single {
+    max-width: 77%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__single_active + .wpm-select-placeholder__rendered {
+  opacity: 0;
+  z-index: -1;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__single_active ~ .wpm-select-placeholder__buttons .wpm-select-placeholder__clear {
+  opacity: 1 !important;
+  visibility: visible;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__clear {
+  opacity: 0;
+  visibility: hidden;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__arrow, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__clear {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  width: 36px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__arrow:hover svg path, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__clear:hover svg path {
+  fill: rgb(40, 43, 93);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__arrow svg path, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-select-placeholder__clear svg path {
+  fill: rgba(40, 43, 93, 0.4);
+  transition: fill 0.15s ease;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner {
+  overflow-x: hidden;
+  border: 0 !important;
+  position: absolute;
+  z-index: 5;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 4px;
+  border: 1px solid rgb(217, 219, 242) !important;
+  margin: 32px;
+  max-height: calc(100% - 64px);
+  width: calc(100% - 64px);
+  max-width: 480px;
+  padding: 32px;
+  opacity: 0;
+  overflow-y: auto;
+  top: 30%;
+  left: 50%;
+  transform: translate(calc(-50% - 32px), 0);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner:focus {
+  outline: none !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner > p {
+  display: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner .modal-form__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner .modal-form__logo img {
+  max-width: 90%;
+  max-height: 47px;
+  height: auto;
+}
+@media screen and (max-width: 575.98px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner {
+    padding: 16px;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner__close {
+  outline: none !important;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  width: 28px;
+  height: 28px;
+  background: url("../img/close.svg") center center no-repeat;
+  background-size: 14px 14px;
+}
+@media screen and (max-width: 575.98px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .modal-form-inner__close {
+    top: 7px;
+    right: 7px;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group + .field-group {
+  margin-top: 32px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(40, 43, 93);
+  margin-bottom: 8px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit]) {
+  box-shadow: none !important;
+  background: rgb(255, 255, 255);
+  height: 40px;
+  position: relative;
+  font-size: 14px;
+  padding: 9px 12px;
+  font-weight: 400;
+  color: rgb(40, 43, 93);
+  border: 1px solid rgb(217, 219, 242);
+  border-radius: 8px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  width: 100%;
+  min-height: unset;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit]):disabled {
+  background: #f6f5f2;
+  cursor: not-allowed;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit])::-webkit-input-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit]):-moz-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit])::-moz-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit]):-ms-input-placeholder {
+  color: rgba(40, 43, 93, 0.4);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group input:not([type=submit]):focus {
+  outline: none !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .field-group .field-warning {
+  margin-top: 8px;
+  box-sizing: border-box;
+  color: rgb(40, 43, 93);
+  border-radius: 8px;
+  display: none;
+  font-size: 14px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search_already_added_company .field-group {
+  margin-top: 32px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search_already_added_company .wpm-modal-form-tab__dsc {
+  display: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn {
+  outline: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  margin: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-weight: 600 !important;
+  font-size: 16px;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  padding: 12px 16px;
+  width: auto;
+  height: 48px;
+  border: 2px solid transparent !important;
+  box-shadow: none;
+  color: #000339;
+  border-radius: 4px;
+  text-transform: none;
+}
+@media screen and (max-width: 575.98px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn {
+    min-width: 54px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_primary {
+  background: #000339 !important;
+  color: rgb(255, 255, 255) !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_primary:hover {
+  background: #000339 !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px !important;
+  border-color: transparent !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_outline-primary {
+  font-weight: 600 !important;
+  background: transparent !important;
+  color: #000339 !important;
+  border-color: #000339 !important;
+}
+@media screen and (max-width: 768px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_outline-primary {
+    line-height: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_outline-primary:hover {
+  background: #000339 !important;
+  color: #fff !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn:disabled {
+  color: #ffffff !important;
+  box-shadow: none !important;
+  background-color: #D9DBF2 !important;
+  pointer-events: none !important;
+  cursor: default !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_block {
+  display: flex;
+  width: 100%;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_mt {
+  margin-top: 32px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_mt.choose_another_payment_method {
+  margin-top: 15px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_mt.continue-with-review {
+  margin-bottom: 15px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_mt-01 {
+  margin-top: 16px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_mt-2 {
+  margin-top: 50px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-btn_mb {
+  margin-bottom: 32px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by {
+    flex-wrap: wrap;
+  }
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  color: #6266A7;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by label:not(:last-child) {
+  margin-right: 10px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by input[type=radio] {
+  display: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by input[type=radio] + .input-placeholder {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  margin-right: 6px;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 1px solid #B5B9E2;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by input[type=radio]:checked + .input-placeholder {
+  background-color: transparent;
+  border-color: #00033C;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-by input[type=radio]:checked + .input-placeholder::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-top: 2px;
+  margin-left: 2px;
+  background-color: #00033C;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .policy-description {
+  margin-top: 32px;
+  font-size: 14px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .checkbox {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .checkbox input[type=checkbox] {
+  display: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .checkbox input[type=checkbox]:checked + .placeholder {
+  border-color: #000339;
+  background-color: #000339;
+  background-image: url(../img/checkmark.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .checkbox input[type=checkbox] + .placeholder {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 12px;
+  box-sizing: border-box;
+  border: 1px solid #B6B8E2;
+  border-radius: 2px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .dc-border-item {
+  display: none;
+  padding: 16px;
+  background: white;
+  border: 1px solid #343aeb;
+  box-shadow: rgba(217, 219, 242, 0.5) 0px 4px 8px;
+  border-radius: 8px;
+  margin: 32px 0px 12px;
+  position: relative;
+  font-size: 14px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .dc-border-item_active {
+  display: block;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result {
+  margin-bottom: 0;
+  margin-top: 8px;
+  overflow: hidden;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) {
+  border-radius: 8px;
+  background: #fff;
+  border: none !important;
+  box-shadow: none !important;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .founded-companies, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #d9dbf2;
+  box-shadow: rgba(217, 219, 242, 0.5) 0 4px 8px;
+  max-height: 215px;
+  overflow-y: scroll;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .founded-companies .company-not-found-placeholder, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found .company-not-found-placeholder {
+  text-decoration: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .founded-companies .company-not-found-placeholder::after, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .founded-companies .company-item::after {
+  content: "";
+  width: calc(100% - 24px);
+  height: 1px;
+  background-color: #d9dbf2;
+  display: block;
+  margin-top: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found-placeholder {
+  background: #fff;
+  padding: 9px 12px;
+  text-decoration: none;
+  border-radius: 0;
+  border-bottom: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found-placeholder#register-company-tab {
+  padding: 9px 12px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found-placeholder#register-company-tab-2 {
+  padding: 6px 16px;
+  padding-top: 16px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found-placeholder .placeholder-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: rgb(40, 43, 93);
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .search-company-result_loaded:not(.search-company-result_selected) .company-not-found-placeholder .placeholder-text {
+  font-size: 14px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .founded-companies {
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid rgb(217, 219, 242);
+  box-shadow: rgba(217, 219, 242, 0.5) 0px 4px 8px;
+  max-height: 220px;
+  overflow-y: scroll;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .company-not-found {
+  color: #282b5d;
+  padding: 16px 16px;
+  font-size: 16px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-preloader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: rgb(153, 153, 153);
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .wpm-preloader:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  animation: spinAround 0.5s infinite linear;
+  border: 3px solid #000339;
+  margin-right: 8px;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .error-register-fields {
+  color: red;
+  margin-top: 8px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .register-company-tab, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .error-confirm-order a {
+  color: #0000ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .register-company-tab:hover {
+  text-decoration: none;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .cant-complete-autorization {
+  margin-top: 25px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .cant-complete-autorization .verify-error {
+  color: #000339;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .cant-complete-autorization .verify-error ol,
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .cant-complete-autorization .verify-error ul {
+  padding-left: 30px;
+  text-align: left;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .cant-complete-autorization .verify-error-explanation {
+  color: red;
+  text-align: center;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .verify-local-error {
+  color: red;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show #cancel-order-sprinque {
+  margin-bottom: 30px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show #email-otp-send {
+  color: #0000ff;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show #register-company-tab, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show #register-company-tab-2 {
+  padding: 0 5px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .purchase_approved .wpm-modal-form-tab__dsc {
+  text-align: center;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .purchase_approved .approved-days {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .finalizing-order .wpm-modal-form-tab__dsc {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wpm-confirm-code-wrap {
+  margin-top: 40px;
+}
+
+#wpm-otp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+#wpm-otp input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-bottom: 1px solid #282b5d !important;
+  outline: 0 !important;
+  margin: 0 !important;
+  width: calc(20% - 10px) !important;
+  font-size: 38px !important;
+  color: #000339;
+  font-weight: 500 !important;
+  text-align: center !important;
+  border-radius: 0;
+}
+#wpm-otp input#confirm-code-1, #wpm-otp input#confirm-code-2, #wpm-otp input#confirm-code-3, #wpm-otp input#confirm-code-4, #wpm-otp input#confirm-code-5 {
+  border-radius: 0;
+}
+
+.wpm-loader {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  animation: spinAround 0.5s infinite linear;
+  border: 4px solid #000339;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  display: block;
+  position: relative;
+}
+.wpm-loader_my {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.otp-error-code {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.error-register-fields {
+  color: red;
+  margin-top: 8px;
+}
+
+.register-company-tab, .error-confirm-order a {
+  color: #0000ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-company-tab:hover {
+  text-decoration: none;
+}
+
+.cant-complete-autorization {
+  margin-top: 25px;
+}
+
+.cant-complete-autorization .verify-error, .cant-complete-autorization .verify-error-explanation {
+  color: red;
+  text-align: center;
+}
+
+.verify-local-error {
+  color: red;
+}
+
+#cancel-order-sprinque {
+  margin-bottom: 30px;
+}
+
+#email-otp-send {
+  color: #0000ff;
+}
+
+#register-company-tab, #register-company-tab-2 {
+  padding: 0 5px;
+  text-decoration: underline;
+}
+
+.purchase_approved .wpm-modal-form-tab__dsc {
+  text-align: center;
+}
+.purchase_approved .approved-days {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error .wpm-modal-form-tab__error, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice .wpm-modal-form-tab__error {
+  background-image: url("../img/error-icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 30px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error .wpm-modal-form-tab__notice, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice .wpm-modal-form-tab__notice {
+  background-image: url("../img/notice-icon.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 30px;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error .wpm-modal-form-tab__title, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice .wpm-modal-form-tab__title {
+  text-align: center;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error .wpm-modal-form-tab__dsc b, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice .wpm-modal-form-tab__dsc b {
+  font-weight: 600;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error .wpm-modal-form-tab__powered, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice .wpm-modal-form-tab__powered {
+  position: relative;
+  text-align: left;
+  color: #D9DBF2;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_error .wpm-modal-form-tab__powered img, body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .sprinque_email_validation_notice .wpm-modal-form-tab__powered img {
+  margin-left: 5px;
+  padding: 2px 0px 0px;
+}
+
+.wpm-modal-form-tab__subtitle {
+  color: var(--wire-black-900, #000339);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 157.143% */
+  margin-bottom: 10px;
+}
+
+.wpm-modal-form-tab__description {
+  color: var(--wire-black-900, #000339);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.wpm-instalments-row {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #e2e4f9;
+  border-radius: 3px;
+  padding: 15px;
+  color: #1f2355;
+  margin-top: 16px;
+  flex-direction: column;
+}
+.wpm-instalments-row > p {
+  display: none;
+}
+.wpm-instalments-row .wpm-instalments-row-label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  color: #1f2355;
+  margin-top: 0;
+}
+.wpm-instalments-row .wpm-instalments-row-label .value {
+  margin-left: auto;
+}
+
+#wpm-terms-and-instalments.wpm-modal-form-tab__instalments .wpm-instalments-row .input-placeholder {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid #D9DBF2;
+  margin-right: 9px;
+}
+
+#wpm-terms-and-instalments.wpm-modal-form-tab__instalments .wpm-instalments-row input[type=radio] {
+  display: none !important;
+}
+
+#wpm-terms-and-instalments.wpm-modal-form-tab__instalments .wpm-instalments-row .label, #wpm-terms-and-instalments.wpm-modal-form-tab__instalments .wpm-instalments-row .value {
+  font-size: 16px;
+}
+
+.wpm-instalments-row-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.wpm-instalments-row-circles > p {
+  margin: 0;
+  display: flex;
+}
+.wpm-instalments-row-circles .wpm-instalments-row-circle-item {
+  border: 2px dashed #D9DBF2;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 78px;
+  width: 78px;
+}
+.wpm-instalments-row-circles .wpm-instalments-row-circle-item .wpm-instalments-row-circle-item-days {
+  color: var(--wire-black-500, #6266A7);
+  text-align: center;
+  font-size: 12.191px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24.382px; /* 200% */
+}
+.wpm-instalments-row-circles .wpm-instalments-row-circle-item .wpm-instalments-row-circle-item-price {
+  color: var(--wire-black-500, #6266A7);
+  font-size: 12.191px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.382px;
+}
+.wpm-instalments-row-circles .wpm-instalments-row-circle-item p {
+  display: none;
+}
+
+#wpm-terms-and-instalments.wpm-modal-form-tab__instalments .wpm-instalments-row.active {
+  border-color: #00023c;
+}
+
+#wpm-terms-and-instalments.wpm-modal-form-tab__instalments .wpm-instalments-row.active .input-placeholder {
+  background-color: #00023c;
+  border-color: #00023c;
+  background-image: url(../img/checkmark.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.wpm-instalments-row-circle-item-arrow {
+  background: url("../img/arrow-right.svg") center center no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.wpm-modal-form-tab__instalments {
+  margin-top: 15px;
+}
+
+.select_payment_term .wpm-modal-form-tab__title {
+  color: var(--wire-black-900, #000339);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+}
+.select_payment_term .wpm-modal-form-tab__dsc {
+  margin: 30px 0;
+  color: var(--wire-black-900, #000339);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.select_payment_term .wpm-terms-row.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.select_payment_term .wpm-terms-row.total .label {
+  color: var(--wire-black-900, #000339);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+}
+.select_payment_term .wpm-terms-row.total .value {
+  color: var(--wire-black-900, #000339);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+}
+.select_payment_term .wpm-terms-row.total p {
+  display: none;
+}
+
+body #wpm-modal-form-wrapper #wpm-modal-form.modal-form.modal-form_show .select_payment_term .wpm-modal-form-tab__title {
+  text-align: center;
+}
+
+/*# sourceMappingURL=frontend.css.map */
